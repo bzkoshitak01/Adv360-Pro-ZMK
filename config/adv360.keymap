@@ -19,6 +19,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        cmd_o_behavior: cmd_o_behavior {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_O_BEHAVIOR";
+            bindings = <&kp O>, <&kp RIGHT_ARROW>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
     };
 
     macros {
@@ -59,7 +68,7 @@
             bindings = <
 &kp EQUAL       &kp N1          &kp N2        &kp N3          &kp N4           &kp N5         &sl 4                                                                                                 &mo 3              &kp N6  &kp N7                &kp N8                 &kp N9    &kp N0    &kp BSLH
 &kp ESCAPE      &kp Q           &kp L         &kp U           &kp COMMA        &kp PERIOD     &kp EXCLAMATION                                                                                       &kp DOUBLE_QUOTES  &kp F   &kp W                 &kp R                  &kp Y     &kp P     &kp SQT
-&kp TAB         &kp E           &kp I         &kp A           &kp O            &kp MINUS      &kp QUESTION     &kp LCTRL         &kp BACKSPACE      &kp GRAVE                      &kp RCTRL        &kp COLON          &kp K   &kp T                 &kp N                  &kp S     &kp H     &kp BACKSPACE
+&kp TAB         &kp E           &kp I         &kp A           &cmd_o_behavior  &kp MINUS      &kp QUESTION     &kp LCTRL         &kp BACKSPACE      &kp GRAVE                      &kp RCTRL        &kp COLON          &kp K   &kp T                 &kp N                  &kp S     &kp H     &kp BACKSPACE
 &kp LEFT_SHIFT  &kp Z           &kp X         &kp C           &kp V            &kp SEMICOLON                                     &kp ENTER          &kp SLASH                                                          &kp G   &kp D                 &kp M                  &kp J     &kp B     &kp RIGHT_COMMAND
 &kp LEFT_ALT    &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW                 &kp SPACE        &kp LEFT_COMMAND  &mo 1              &kp RS(RA(RC(RIGHT_COMMAND)))  &kp RIGHT_SHIFT  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_ALT
             >;
@@ -72,7 +81,7 @@
 &none  &kp LG(P)  &kp LG(Y)  &kp LG(R)  &kp LG(W)  &kp LG(F)  &none                                                   &kp DOUBLE_QUOTES  &kp F   &kp W                 &kp R                  &kp Y     &kp P     &kp SQT
 &none  &kp LG(H)  &kp LG(S)  &kp LG(N)  &kp LG(T)  &kp LG(K)  &none  &none  &none      &kp PLUS      &kp RCTRL        &kp COLON          &kp K   &kp T                 &kp N                  &kp S     &kp H     &kp BACKSPACE
 &none  &kp LG(B)  &kp LG(J)  &kp LG(M)  &kp LG(D)  &kp LG(G)                &none      &kp ASTERISK                                      &kp G   &kp D                 &kp M                  &kp J     &kp B     &kp RIGHT_COMMAND
-&none  &none      &none      &none      &none                 &none  &none  &none      &kp SLASH     &kp RIGHT_SHIFT  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_ALT
+&none  &kp RG(E)  &kp RG(I)  &kp RG(A)  &kp RG(O)             &none  &none  &none      &kp SLASH     &kp RIGHT_SHIFT  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_ALT
             >;
         };
 
