@@ -66,33 +66,22 @@
         onishi_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL       &kp N1          &kp N2        &kp N3          &kp N4           &kp N5         &sl 4                                                                                                 &mo 3              &kp N6  &kp N7                &kp N8                 &kp N9    &kp N0    &kp BSLH
+&kp EQUAL       &kp N1          &kp N2        &kp N3          &kp N4           &kp N5         &sl 3                                                                                                 &mo 2              &kp N6  &kp N7                &kp N8                 &kp N9    &kp N0    &kp BSLH
 &kp ESCAPE      &kp Q           &kp L         &kp U           &kp COMMA        &kp PERIOD     &kp EXCLAMATION                                                                                       &kp DOUBLE_QUOTES  &kp F   &kp W                 &kp R                  &kp Y     &kp P     &kp SQT
 &kp TAB         &kp E           &kp I         &kp A           &kp O            &kp MINUS      &kp QUESTION     &kp LCTRL         &kp BACKSPACE      &kp GRAVE                      &kp RCTRL        &kp COLON          &kp K   &kp T                 &kp N                  &kp S     &kp H     &kp BACKSPACE
-&kp LEFT_SHIFT  &kp Z           &kp X         &kp C           &kp V            &kp SEMICOLON                                     &kp ENTER          &kp SLASH                                                          &kp G   &kp D                 &kp M                  &kp J     &kp B     &kp RIGHT_COMMAND
-&kp LEFT_ALT    &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW                 &kp SPACE        &kp LEFT_COMMAND  &mo 1              &kp RS(RA(RC(RIGHT_COMMAND)))  &kp RIGHT_SHIFT  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_ALT
+&kp LEFT_ALT    &kp Z           &kp X         &kp C           &kp V            &kp SEMICOLON                                     &kp ENTER          &kp SLASH                                                          &kp G   &kp D                 &kp M                  &kp J     &kp B     &kp RIGHT_COMMAND
+&kp LEFT_SHIFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW                 &kp SPACE        &kp LEFT_COMMAND  &mo 1              &kp RS(RA(RC(RIGHT_COMMAND)))  &kp RIGHT_SHIFT  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_ALT
             >;
         };
 
         onishi_reverse_command_layer {
             display-name = "Base";
             bindings = <
-&none  &none      &none      &none      &none      &none      &none                                                   &mo 3              &kp N6  &kp N7                &kp N8                 &kp N9    &kp N0    &kp BSLH
-&none  &kp LG(P)  &kp LG(Y)  &kp LG(R)  &kp LG(W)  &kp LG(F)  &none                                                   &kp DOUBLE_QUOTES  &kp F   &kp W                 &kp R                  &kp Y     &kp P     &kp SQT
-&none  &kp LG(H)  &kp LG(S)  &kp LG(N)  &kp LG(T)  &kp LG(K)  &none  &none  &none      &kp PLUS      &kp RCTRL        &kp COLON          &kp K   &kp T                 &kp N                  &kp S     &kp H     &kp BACKSPACE
-&none  &kp LG(B)  &kp LG(J)  &kp LG(M)  &kp LG(D)  &kp LG(G)                &none      &kp ASTERISK                                      &kp G   &kp D                 &kp M                  &kp J     &kp B     &kp RIGHT_COMMAND
-&none  &kp RG(E)  &kp RG(I)  &kp RG(A)  &kp RG(O)             &none  &none  &none      &kp SLASH     &kp RIGHT_SHIFT  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_ALT
-            >;
-        };
-
-        qwerty_layer {
-            display-name = "Base";
-            bindings = <
-&kp EQUAL                     &kp N1          &kp N2        &kp N3          &kp N4           &kp N5  &mo 4                                                                         &mo 3              &kp N6  &kp N7                &kp N8                 &kp N9    &kp N0    &kp BSLH
-&kp LS(LA(LC(LEFT_COMMAND)))  &kp Q           &kp W         &kp E           &kp R            &kp T   &kp EXCL                                                                      &kp DOUBLE_QUOTES  &kp Y   &kp U                 &kp I                  &kp O     &kp P     &kp SQT
-&kp TAB                       &kp A           &kp S         &kp D           &kp F            &kp G   &kp QUESTION  &kp LCTRL         &kp ESCAPE      &kp PLUS   &kp RCTRL          &kp COLON          &kp H   &kp J                 &kp K                  &kp L     &kp SEMI  &kp BACKSPACE
-&kp LSHFT                     &kp Z           &kp X         &kp C           &kp V            &kp B                                   &none           &kp MINUS                                        &kp N   &kp M                 &kp COMMA              &kp DOT   &kp FSLH  &kp RSHFT
-&kp LEFT_ALT                  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW          &kp SPACE     &kp LEFT_COMMAND  &none           &kp GRAVE  &kp RIGHT_COMMAND  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_ALT
+&none  &none      &none      &none      &none      &none      &none                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp RG(P)  &kp RG(Y)  &kp RG(R)  &kp RG(W)  &kp RG(F)  &none                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp RG(H)  &kp RG(S)  &kp RG(N)  &kp RG(T)  &kp RG(K)  &none  &none  &none       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp RG(B)  &kp RG(J)  &kp RG(M)  &kp RG(D)  &kp RG(G)                &none       &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none      &none      &none      &none                 &none  &none  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -101,8 +90,8 @@
             bindings = <
 &none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans           &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
-&studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
+&studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &none            &none  &none       &none       &none  &none  &none
+&none           &none         &none         &none         &none         &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
@@ -110,11 +99,22 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 0                                      &mo 0   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&none   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none                                        &none   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &kp F11                                      &none   &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp F12  &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans      &trans                  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans   &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
+            >;
+        };
+
+        qwerty_layer {
+            display-name = "Base";
+            bindings = <
+&kp EQUAL                     &kp N1          &kp N2        &kp N3          &kp N4           &kp N5  &mo 3                                                                         &mo 2              &kp N6  &kp N7                &kp N8                 &kp N9    &kp N0    &kp BSLH
+&kp LS(LA(LC(LEFT_COMMAND)))  &kp Q           &kp W         &kp E           &kp R            &kp T   &kp EXCL                                                                      &kp DOUBLE_QUOTES  &kp Y   &kp U                 &kp I                  &kp O     &kp P     &kp SQT
+&kp TAB                       &kp A           &kp S         &kp D           &kp F            &kp G   &kp QUESTION  &kp LCTRL         &kp ESCAPE      &kp PLUS   &kp RCTRL          &kp COLON          &kp H   &kp J                 &kp K                  &kp L     &kp SEMI  &kp BACKSPACE
+&kp LSHFT                     &kp Z           &kp X         &kp C           &kp V            &kp B                                   &none           &kp MINUS                                        &kp N   &kp M                 &kp COMMA              &kp DOT   &kp FSLH  &kp RSHFT
+&kp LEFT_ALT                  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW          &kp SPACE     &kp LEFT_COMMAND  &none           &kp GRAVE  &kp RIGHT_COMMAND  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_ALT
             >;
         };
     };
