@@ -93,11 +93,11 @@
         onishi_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL       &kp N1          &kp N2        &kp N3          &kp N4           &kp N5         &sl 3                                                                                                            &mo 2              &kp N6  &kp N7                &kp N8                 &kp N9     &kp N0       &kp BSLH
-&kp ESCAPE      &kp L           &kp PERIOD    &kp U           &kp COMMA        &kp Q          &kp EXCLAMATION                                                                                                  &kp DOUBLE_QUOTES  &kp F   &kp G                 &kp R                  &kp Y      &kp P        &kp SQT
-&kp TAB         &kp E           &kp I         &kp A           &kp O            &kp MINUS      &kp QUESTION     &mt LCTRL INT_MUHENKAN  &kp BACKSPACE      &kp GRAVE                      &mt RCTRL INT_HENKAN  &kp COLON          &kp K   &t_left_mac           &n_right_mac           &s_up_mac  &h_down_mac  &kp BACKSPACE
-&kp LEFT_ALT    &kp Z           &kp X         &kp C           &kp V            &kp SEMICOLON                                           &kp ENTER          &kp SLASH                                                               &kp W   &kp D                 &kp M                  &kp J      &kp B        &kp RIGHT_COMMAND
-&kp LEFT_SHIFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW                 &kp SPACE        &kp LEFT_COMMAND        &mo 1              &kp RS(RA(RC(RIGHT_COMMAND)))  &kp RIGHT_SHIFT       &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT   &kp RBKT     &kp RIGHT_ALT
+&kp EQUAL       &kp N1          &kp N2        &kp N3          &kp N4           &kp N5         &sl 3                                                                                                 &mo 2              &kp N6  &kp N7                &kp N8                 &kp N9     &kp N0       &kp BSLH
+&kp ESCAPE      &kp L           &kp PERIOD    &kp U           &kp COMMA        &kp Q          &kp EXCLAMATION                                                                                       &kp DOUBLE_QUOTES  &kp F   &kp G                 &kp R                  &kp Y      &kp P        &kp SQT
+&kp TAB         &kp E           &kp I         &kp A           &kp O            &kp MINUS      &kp QUESTION     &kp LCTRL         &kp BACKSPACE      &kp GRAVE                      &kp RCTRL        &kp COLON          &kp K   &t_left_mac           &n_right_mac           &s_up_mac  &h_down_mac  &kp BACKSPACE
+&kp LEFT_ALT    &kp Z           &kp X         &kp C           &kp V            &kp SEMICOLON                                     &kp ENTER          &kp SLASH                                                          &kp W   &kp D                 &kp M                  &kp J      &kp B        &kp RIGHT_COMMAND
+&kp LEFT_SHIFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW                 &kp SPACE        &kp LEFT_COMMAND  &mo 1              &kp RS(RA(RC(RIGHT_COMMAND)))  &kp RIGHT_SHIFT  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT   &kp RBKT     &kp RIGHT_ALT
             >;
         };
 
