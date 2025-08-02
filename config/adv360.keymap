@@ -20,40 +20,76 @@
             bindings = <&kp>, <&kp>;
         };
 
-        t_left_mac: t_left_mac {
+        t_left_mac_cmd: t_left_mac_cmd {
             compatible = "zmk,behavior-mod-morph";
-            label = "T_LEFT_MAC";
+            label = "T_LEFT_MAC_CMD";
             bindings = <&kp T>, <&kp LEFT_ARROW>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
 
-        n_right_mac: n_right_mac {
+        n_right_mac_cmd: n_right_mac_cmd {
             compatible = "zmk,behavior-mod-morph";
-            label = "N_RIGHT_MAC";
+            label = "N_RIGHT_MAC_CMD";
             bindings = <&kp N>, <&kp RIGHT_ARROW>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
 
-        s_up_mac: s_up_mac {
+        s_up_mac_cmd: s_up_mac_cmd {
             compatible = "zmk,behavior-mod-morph";
-            label = "S_UP_MAC";
+            label = "S_UP_MAC_CMD";
             bindings = <&kp S>, <&kp UP_ARROW>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
 
-        h_down_mac: h_down_mac {
+        h_down_mac_cmd: h_down_mac_cmd {
             compatible = "zmk,behavior-mod-morph";
-            label = "H_DOWN_MAC";
+            label = "H_DOWN_MAC_CMD";
             bindings = <&kp H>, <&kp DOWN_ARROW>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
+        };
+
+        t_left_mac: t_left_mac {
+            compatible = "zmk,behavior-mod-morph";
+            label = "T_LEFT_MAC";
+            bindings = <&t_left_mac_cmd>, <&kp LG(LEFT_ARROW)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        n_right_mac: n_right_mac {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N_RIGHT_MAC";
+            bindings = <&n_right_mac_cmd>, <&kp LG(RIGHT_ARROW)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        s_up_mac: s_up_mac {
+            compatible = "zmk,behavior-mod-morph";
+            label = "S_UP_MAC";
+            bindings = <&s_up_mac_cmd>, <&kp LG(UP_ARROW)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        h_down_mac: h_down_mac {
+            compatible = "zmk,behavior-mod-morph";
+            label = "H_DOWN_MAC";
+            bindings = <&h_down_mac_cmd>, <&kp LG(DOWN_ARROW)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
