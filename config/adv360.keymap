@@ -152,7 +152,7 @@
 &kp ESCAPE      &kp L      &kp COMMA  &kp U      &kp PERIOD           &kp Q          &kp EXCLAMATION                                                                                       &kp DOUBLE_QUOTES  &kp F   &kp G                 &kp R                  &kp Y     &kp P     &kp SQT
 &kp TAB         &kp E      &kp I      &kp A      &kp O                &kp MINUS      &kp QUESTION     &kp LCTRL         &kp BACKSPACE      &kp GRAVE                      &kp RCTRL        &kp COLON          &kp K   &kp T                 &kp N                  &kp S     &kp H     &kp BACKSPACE
 &kp LEFT_ALT    &kp Z      &kp X      &kp C      &kp V                &kp SEMICOLON                                     &kp ENTER          &kp SLASH                                                          &kp W   &kp D                 &kp M                  &kp J     &kp B     &kp RIGHT_ALT
-&kp LEFT_SHIFT  &kp RG(N)  &kp RG(S)  &kp RG(F)  &kp RG(RIGHT_ARROW)                 &kp RS(SPACE)    &kp LEFT_COMMAND  &mo 1              &kp RS(RA(RC(RIGHT_COMMAND)))  &kp RIGHT_SHIFT  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_COMMAND
+&kp LEFT_SHIFT  &kp RG(N)  &kp RG(S)  &kp RG(F)  &kp RG(RIGHT_ARROW)                 &kp SPACE        &kp LEFT_COMMAND  &mo 1              &kp RS(RA(RC(RIGHT_COMMAND)))  &kp RIGHT_SHIFT  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_COMMAND
             >;
         };
 
