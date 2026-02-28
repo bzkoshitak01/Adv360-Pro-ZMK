@@ -100,6 +100,16 @@
             #binding-cells = <0>;
             mods = <(MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
         };
+
+        new_hold_tap: new_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_HOLD_TAP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
     };
 
     macros {
@@ -138,22 +148,22 @@
         mac {
             display-name = "Base";
             bindings = <
-&kp EQUAL       &kp N1          &kp N2        &kp N3          &kp N4           &kp N5         &fn_os                                                                                                &mo 4              &kp N6  &kp N7                &kp N8                 &kp N9    &kp N0    &kp BSLH
-&kp ESCAPE      &kp L           &kp COMMA     &kp U           &kp PERIOD       &kp Q          &kp EXCLAMATION                                                                                       &kp DOUBLE_QUOTES  &kp F   &kp G                 &kp R                  &kp Y     &kp P     &kp SQT
-&kp TAB         &kp E           &kp I         &kp A           &kp O            &kp MINUS      &kp QUESTION     &kp LCTRL         &kp BACKSPACE      &kp GRAVE                      &kp RCTRL        &kp COLON          &kp K   &kp T                 &kp N                  &kp S     &kp H     &kp BACKSPACE
-&kp LEFT_ALT    &kp Z           &kp X         &kp C           &kp V            &kp SEMICOLON                                     &kp ENTER          &kp SLASH                                                          &kp W   &kp D                 &kp M                  &kp J     &kp B     &kp RIGHT_ALT
-&kp LEFT_SHIFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW                 &kp SPACE        &kp LEFT_COMMAND  &mo 1              &kp RS(RA(RC(RIGHT_COMMAND)))  &kp RIGHT_SHIFT  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_COMMAND
+&kp EQUAL       &kp N1          &kp N2        &kp N3          &kp N4           &kp N5         &fn_os                                                                                                      &mo 4              &kp N6  &kp N7                &kp N8                 &kp N9    &kp N0    &kp BSLH
+&kp ESCAPE      &kp L           &kp COMMA     &kp U           &kp PERIOD       &kp Q          &kp EXCLAMATION                                                                                             &kp DOUBLE_QUOTES  &kp F   &kp G                 &kp R                  &kp Y     &kp P     &kp SQT
+&kp TAB         &kp E           &kp I         &kp A           &kp O            &kp MINUS      &kp QUESTION           &kp LCTRL         &kp BACKSPACE      &kp GRAVE                      &kp RCTRL        &kp COLON          &kp K   &kp T                 &kp N                  &kp S     &kp H     &kp BACKSPACE
+&kp LEFT_ALT    &kp Z           &kp X         &kp C           &kp V            &kp SEMICOLON                                           &kp ENTER          &kp SLASH                                                          &kp W   &kp D                 &kp M                  &kp J     &kp B     &kp RIGHT_ALT
+&kp LEFT_SHIFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW                 &new_hold_tap 1 SPACE  &kp LEFT_COMMAND  &mo 1              &kp RS(RA(RC(RIGHT_COMMAND)))  &kp RIGHT_SHIFT  &kp ENTER                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT  &kp RIGHT_COMMAND
             >;
         };
 
         mac_reverse {
             display-name = "Base";
             bindings = <
-&none  &none      &none      &none      &none      &none      &none                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&none  &kp RG(P)  &kp RG(Y)  &kp RG(R)  &kp RG(G)  &kp RG(F)  &none                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&none  &kp RG(H)  &kp RG(S)  &kp RG(N)  &kp RG(T)  &kp RG(K)  &none  &none  &none       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&none  &kp RG(B)  &kp RG(J)  &kp RG(M)  &kp RG(D)  &kp RG(W)                &none       &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&none  &none      &none      &none      &none                 &none  &none  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&none  &none      &none      &none      &none      &none      &none                                     &trans  &trans  &trans          &trans           &trans        &trans          &trans
+&none  &kp RG(P)  &kp RG(Y)  &kp RG(R)  &kp RG(G)  &kp RG(F)  &none                                     &trans  &trans  &trans          &trans           &trans        &trans          &trans
+&none  &kp RG(H)  &kp RG(S)  &kp RG(N)  &kp RG(T)  &kp RG(K)  &none  &none  &none       &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &trans
+&none  &kp RG(B)  &kp RG(J)  &kp RG(M)  &kp RG(D)  &kp RG(W)                &none       &trans                  &trans  &trans          &trans           &trans        &trans          &trans
+&none  &none      &none      &none      &none                 &none  &none  &trans      &trans  &trans  &trans          &trans          &trans           &trans        &trans          &trans
             >;
         };
 
